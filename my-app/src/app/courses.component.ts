@@ -12,13 +12,12 @@ import { Component } from '@angular/core';
               <!-- "let course of courses" is like a for each. It basically defines course to hold one item of courses -->
         </li>                                       
     </ul>
-    
     `
 })
 export class CoursesComponent{
     title = "List of courses"
 
-    courses = ["course1", "course2", "course3"]
+    courses;
 
     //logic for an HTTp serive - if you link to the service here it will "tightly couple" the component to a live HTTP endpoint - this could fuck the unit testing later on
 }

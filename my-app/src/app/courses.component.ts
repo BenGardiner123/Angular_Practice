@@ -16,6 +16,7 @@ import { CoursesService } from './courses.service';
     `
 })
 export class CoursesComponent{
+    numAuthors = CoursesComponent
     title = "List of courses"
 
     courses;

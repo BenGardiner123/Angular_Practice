@@ -1,6 +1,8 @@
+import { CourseComponent } from './course/course.component';
+import { CoursesComponent } from './courses.component';
 
 export class CoursesService {
     getCourses(){
-        return ["Course1", "Course2", "Course3"]
+        return ["course1", "course2","course3"];
     }
 }

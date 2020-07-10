@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
+import { AuthorsComponent } from './authors/authors.component';
+import { AuthorsService } from './authors.service';
 
 @NgModule({
   declarations: [
     AppComponent, 
     CoursesComponent, 
-    CourseComponent
+    CourseComponent, AuthorsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    AuthorsService
     //When you register a dependency as a provide in a module as we have done here, Angualr creates a single instance of this class for the entire module.
     //so if we had 100 components and 50 of them need this CoursesService - still only one instance serves them all. (Singleton Pattern)
   ],
